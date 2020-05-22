@@ -1,10 +1,21 @@
 from __future__ import print_function
+import os
+import sys
 
 
+def dog():
+    print("Bow Bow..")
+    
 
-def main():
-    print("Hello")
+def main(type):
+    if type=="dog":
+        dog()
+    else:
+        print("Hello")
 
 
 if __name__=="__main__":
-    main()
+    if len(sys.argv) !=2:
+        sys.exit("python %s animalname"%(sys.argv[0]))
+    type=sys.argv[1].rstrip()
+    main(type)
