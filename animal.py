@@ -8,12 +8,17 @@ def dog():
     
 def cat():
     print("Meeeoww..")
-    
+
+def cow():
+    print("Mooooww ...")
+
 def main(type):
     if type=="dog":
         dog()
     elif type =="cat":
         cat()
+    elif type=="cow":
+        cow()
     else:
         print("Hello")
 
