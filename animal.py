@@ -2,6 +2,9 @@ from __future__ import print_function
 import os
 import sys
 
+def snake():
+    print("Hsssss..")
+    
 
 def dog():
     print("Bow Bow..")
@@ -19,6 +22,8 @@ def main(type):
         cat()
     elif type=="cow":
         cow()
+    elif type=="snake":
+        snake()
     else:
         print("Hello")
 
