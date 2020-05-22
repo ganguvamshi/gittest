@@ -6,10 +6,14 @@ import sys
 def dog():
     print("Bow Bow..")
     
-
+def cat():
+    print("Meeeoww..")
+    
 def main(type):
     if type=="dog":
         dog()
+    elif type =="cat":
+        cat()
     else:
         print("Hello")
 
